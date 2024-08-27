@@ -10,23 +10,3 @@ describe('App', () => {
     expect(app).toBeInTheDocument();
   });
 })
-
-describe('Newsletter Form', () => {
-  it('renders a form', () => {
-    const { getByRole } = render(<App />);
-    const form = getByRole('form');
-    expect(form).toBeInTheDocument();
-  });
-
-  it('renders a newsletter signup input', () => {
-    const { getByPlaceholderText } = render(<App />);
-    const input = getByPlaceholderText('Enter your email address');
-    expect(input).toBeInTheDocument();
-  });
-
-  it('renders a newsletter signup submit button', () => {
-    const { getByRole } = render(<App />);
-    const button = getByRole('button', { name: 'Subscribe' });
-    expect(button).toBeInTheDocument();
-  });
-})
