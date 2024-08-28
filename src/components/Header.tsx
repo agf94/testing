@@ -1,9 +1,10 @@
-const Header = () => {
+function Header() {
   return (
-    <header className="header">
-      <h1>Welcome to Our Bank</h1>
-    </header>
+    <section className="hero h-8 bg-blue-500 flex justify-start items-center text-black">
+      <span>Welcome to our Bank</span>
+    </section>
   );
-};
+}
 
 export default Header;
+
